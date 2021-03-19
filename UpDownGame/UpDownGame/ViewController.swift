@@ -24,5 +24,10 @@ class ViewController: UIViewController {
     @IBAction func touchUpHitButton(_ sender: UIButton){
         print(slider.value)
     }
+    
+    @IBAction func touchUpResetButton(_ sender: UIButton){
+        slider.value = 15
+        print("touch up reset button")
+    }
 }
 
