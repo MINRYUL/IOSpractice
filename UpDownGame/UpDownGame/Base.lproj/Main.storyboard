@@ -118,6 +118,8 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="njS-va-0sf" id="91T-Dw-HRe"/>
+                        <outlet property="sliderValueLable" destination="dno-a1-cm6" id="gUf-3M-5bl"/>
+                        <outlet property="tryCountLable" destination="nfM-Lt-Fsb" id="z6K-Gr-MEk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
