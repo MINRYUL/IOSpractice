@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        slider.setThumbImage(#imageLiteral(resourceName: "slider_thumb"), for: .normal) //stroyboard로 이미지를 바꿀 수 없을때 코드로 바꾸는 것이 가능하다.
     }
 
     //인터페이스 빌더에 요소들이 이벤트를 받았을때 거기에 반응하기 위한 것.
