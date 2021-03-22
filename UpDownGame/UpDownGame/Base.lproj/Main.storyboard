@@ -15,19 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="njS-va-0sf">
-                                <rect key="frame" x="160" y="193" width="577" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="njS-va-0sf">
+                                <rect key="frame" x="89" y="192" width="718" height="31"/>
                                 <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="maximumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mbx-uW-rnx"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-QK-yJJ">
-                                <rect key="frame" x="420" y="252" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.81632485892414086" blue="0.72027369823497855" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxV-QK-yJJ">
+                                <rect key="frame" x="420.5" y="238" width="55" height="84"/>
+                                <color key="tintColor" red="1" green="0.82334876906565257" blue="0.2295571475769812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="checkmark.seal.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
@@ -37,57 +35,86 @@
                                     <action selector="touchUpHitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5b-mX-qix"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rc-PA-XEx">
-                                <rect key="frame" x="689" y="52" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="RESET"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rc-PA-XEx">
+                                <rect key="frame" x="802" y="44" width="25" height="23"/>
+                                <color key="tintColor" red="1" green="0.82334876906565257" blue="0.2295571475769812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="memories" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                                 <connections>
                                     <action selector="touchUpResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6J-MY-oMU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the Random Number!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u1-X2-gBn">
-                                <rect key="frame" x="242" y="52" width="412" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Random Number!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u1-X2-gBn">
+                                <rect key="frame" x="242" y="35" width="412" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dno-a1-cm6">
-                                <rect key="frame" x="438" y="132" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dno-a1-cm6">
+                                <rect key="frame" x="438.5" y="155" width="19" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-Ax-093">
-                                <rect key="frame" x="74" y="197" width="11" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-Ax-093">
+                                <rect key="frame" x="60" y="196.5" width="11" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-KS-ZCK">
-                                <rect key="frame" x="780" y="197" width="21" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-KS-ZCK">
+                                <rect key="frame" x="825" y="196.5" width="55" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-Lt-Fsb">
-                                <rect key="frame" x="433" y="335" width="27" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-mU-FIl">
-                                <rect key="frame" x="162" y="52" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="INFO"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-mU-FIl">
+                                <rect key="frame" x="69" y="44" width="23" height="23"/>
+                                <color key="tintColor" red="1" green="0.82334876906565257" blue="0.2295571475769812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="info.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-Lt-Fsb">
+                                <rect key="frame" x="434.5" y="352" width="27" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.76656557247426704" green="1" blue="0.91701718353454231" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.75295400420462766" green="1" blue="0.82134906225890481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="26e-DN-dzG"/>
+                            <constraint firstItem="5u1-X2-gBn" firstAttribute="centerY" secondItem="Zgb-mU-FIl" secondAttribute="centerY" id="3qU-t8-Vdk"/>
+                            <constraint firstItem="qWS-Ax-093" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5ND-3K-SGc"/>
+                            <constraint firstItem="nfM-Lt-Fsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5z0-2w-7Pe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rc-PA-XEx" secondAttribute="trailing" constant="25" id="8L0-Q2-tZG"/>
+                            <constraint firstItem="dno-a1-cm6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nj-Iz-IdX"/>
+                            <constraint firstItem="fxV-QK-yJJ" firstAttribute="top" secondItem="njS-va-0sf" secondAttribute="bottom" constant="16" id="9rq-Gj-87f"/>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="leading" secondItem="qWS-Ax-093" secondAttribute="trailing" constant="20" id="EWq-v0-B9v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nfM-Lt-Fsb" secondAttribute="bottom" constant="20" id="GNB-hM-Z4e"/>
+                            <constraint firstItem="Zgb-mU-FIl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="I46-Wk-IDW"/>
+                            <constraint firstItem="nfM-Lt-Fsb" firstAttribute="top" secondItem="fxV-QK-yJJ" secondAttribute="bottom" constant="30" id="Kqi-T4-2Ry"/>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LB0-TF-CYK"/>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="centerY" secondItem="qWS-Ax-093" secondAttribute="centerY" id="NlM-Vo-Xvx"/>
+                            <constraint firstItem="E3Q-KS-ZCK" firstAttribute="centerY" secondItem="qWS-Ax-093" secondAttribute="centerY" id="RvL-br-dZ2"/>
+                            <constraint firstItem="fxV-QK-yJJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UiH-pR-oXs"/>
+                            <constraint firstItem="5u1-X2-gBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cum-1O-7yy"/>
+                            <constraint firstItem="4Rc-PA-XEx" firstAttribute="centerY" secondItem="Zgb-mU-FIl" secondAttribute="centerY" id="gBC-FU-g2I"/>
+                            <constraint firstItem="E3Q-KS-ZCK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jdH-NR-t3P"/>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ob5-SL-c37"/>
+                            <constraint firstItem="5u1-X2-gBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="pUT-NI-G5k"/>
+                            <constraint firstAttribute="trailing" secondItem="E3Q-KS-ZCK" secondAttribute="trailing" constant="16" id="rX4-q7-7bS"/>
+                            <constraint firstItem="E3Q-KS-ZCK" firstAttribute="leading" secondItem="njS-va-0sf" secondAttribute="trailing" constant="20" id="tR1-v8-1c3"/>
+                            <constraint firstItem="qWS-Ax-093" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z0z-DA-ykk"/>
+                            <constraint firstItem="njS-va-0sf" firstAttribute="top" secondItem="dno-a1-cm6" secondAttribute="bottom" constant="16" id="z5i-8b-3WN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="slider" destination="njS-va-0sf" id="91T-Dw-HRe"/>
@@ -100,5 +127,7 @@
     </scenes>
     <resources>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="memories" catalog="system" width="128" height="110"/>
     </resources>
 </document>
