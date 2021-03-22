@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in self.reset() }
         
         alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil) //present 화면에 올려주는 메서드.
     }
     
     @IBAction func touchUpHitButton(_ sender: UIButton){
