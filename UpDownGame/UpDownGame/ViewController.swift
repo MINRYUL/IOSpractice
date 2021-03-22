@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     var randomValue: Int = 0
     var tryCount: Int = 0
     @IBOutlet weak var slider: UISlider!    //스토리보드 위에 올려져있는 요소와 연결할 때 쓰는 어노테이션
-    @IBOutlet weak var tryCountLable: UILabel!
-    @IBOutlet weak var sliderValueLable: UILabel!
+    @IBOutlet weak var tryCountLabel: UILabel!
+    @IBOutlet weak var sliderValueLabel: UILabel!
+    @IBOutlet weak var minimumValueLabel: UILabel!
+    @IBOutlet weak var maximumValueLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +41,10 @@ class ViewController: UIViewController {
     }
     
     func reset() {
-        slider.value = 15
         print("reset")
+        randomValue = Int.random(in: 0...30) //... -> 범위 연산자의 일종 A...B 폐쇄 범위 연산자 A..<B 반폐쇄연산자는 앞의 수 포함 뒤의 수를 포함하지 않는다.
+                                             //A..., ...A, ..<A 단방향 범위 연산자 또한 3가지 있다.
+        
     }
 }
 

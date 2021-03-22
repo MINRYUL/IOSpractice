@@ -59,12 +59,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-Ax-093">
-                                <rect key="frame" x="60" y="196.5" width="11" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-KS-ZCK">
                                 <rect key="frame" x="825" y="196.5" width="55" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -83,6 +77,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-Lt-Fsb">
                                 <rect key="frame" x="434.5" y="352" width="27" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-Ax-093">
+                                <rect key="frame" x="60" y="196" width="11" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -117,9 +117,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="maximumValueLabel" destination="E3Q-KS-ZCK" id="k8B-tr-BO8"/>
+                        <outlet property="minimumValueLabel" destination="qWS-Ax-093" id="dyK-bX-97y"/>
                         <outlet property="slider" destination="njS-va-0sf" id="91T-Dw-HRe"/>
-                        <outlet property="sliderValueLable" destination="dno-a1-cm6" id="gUf-3M-5bl"/>
-                        <outlet property="tryCountLable" destination="nfM-Lt-Fsb" id="z6K-Gr-MEk"/>
+                        <outlet property="sliderValueLabel" destination="dno-a1-cm6" id="mEr-H5-rgC"/>
+                        <outlet property="tryCountLabel" destination="nfM-Lt-Fsb" id="a7d-g8-YSY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
