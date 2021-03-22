@@ -13,6 +13,7 @@
 		DA76E57B25FCDAC5001BB0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA76E57925FCDAC5001BB0D0 /* Main.storyboard */; };
 		DA76E57D25FCDAC6001BB0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA76E57C25FCDAC6001BB0D0 /* Assets.xcassets */; };
 		DA76E58025FCDAC6001BB0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA76E57E25FCDAC6001BB0D0 /* LaunchScreen.storyboard */; };
+		DA8774162608B64B00F7B181 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8774152608B64B00F7B181 /* CreditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA76E57C25FCDAC6001BB0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA76E57F25FCDAC6001BB0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA76E58125FCDAC6001BB0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8774152608B64B00F7B181 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DA76E57325FCDAC5001BB0D0 /* AppDelegate.swift */,
 				DA76E57525FCDAC5001BB0D0 /* SceneDelegate.swift */,
 				DA76E57725FCDAC5001BB0D0 /* ViewController.swift */,
+				DA8774152608B64B00F7B181 /* CreditViewController.swift */,
 				DA76E57925FCDAC5001BB0D0 /* Main.storyboard */,
 				DA76E57C25FCDAC6001BB0D0 /* Assets.xcassets */,
 				DA76E57E25FCDAC6001BB0D0 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				DA76E57825FCDAC5001BB0D0 /* ViewController.swift in Sources */,
 				DA76E57425FCDAC5001BB0D0 /* AppDelegate.swift in Sources */,
 				DA76E57625FCDAC5001BB0D0 /* SceneDelegate.swift in Sources */,
+				DA8774162608B64B00F7B181 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
