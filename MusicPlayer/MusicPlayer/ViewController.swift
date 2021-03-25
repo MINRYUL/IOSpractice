@@ -10,9 +10,11 @@ import AVFoundation
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
+    // MARK:- Properties
     var player : AVAudioPlayer!
     var timer : Timer!
     
+    // MARK: IBOutlets
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var progressSlider: UISlider!
@@ -23,6 +25,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.initializePlayer()
     }
     
+    //MARK: - Methods
+    //MARK: Custom Method
     func initializePlayer() {
         
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else {
@@ -69,6 +73,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.timer = nil
     }
 
+    // MARK: IBAction
     @IBAction func touchUpPlayPauseButton(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
