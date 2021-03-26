@@ -15,9 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-D2-Agb">
+                                <rect key="frame" x="169" y="314" width="76" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLa-JE-76R">
+                                <rect key="frame" x="107" y="94" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VVJ-g6-Zpb"/>
+                                    <constraint firstAttribute="height" constant="200" id="cQP-WJ-YMM"/>
+                                </constraints>
+                                <state key="normal" image="button_play"/>
+                                <state key="selected" image="button_pause"/>
+                                <connections>
+                                    <action selector="touchUpPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVe-Sr-SeS"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-6O-aDV">
+                                <rect key="frame" x="14" y="355" width="386" height="31"/>
+                                <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="NJJ-Iy-8DK"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LLa-JE-76R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jg-Vr-OXI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZVP-6O-aDV" secondAttribute="trailing" constant="16" id="8L9-dM-7Ho"/>
+                            <constraint firstItem="LLt-D2-Agb" firstAttribute="top" secondItem="LLa-JE-76R" secondAttribute="bottom" constant="20" id="Hii-V5-3kw"/>
+                            <constraint firstItem="LLa-JE-76R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="TwM-ox-iXy"/>
+                            <constraint firstItem="LLt-D2-Agb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhS-OT-8Ah"/>
+                            <constraint firstItem="ZVP-6O-aDV" firstAttribute="top" secondItem="LLt-D2-Agb" secondAttribute="bottom" constant="20" id="eSN-ym-yWS"/>
+                            <constraint firstItem="ZVP-6O-aDV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gaQ-sU-h4z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playPauseButton" destination="LLa-JE-76R" id="RRP-VV-cYx"/>
+                        <outlet property="progressSlider" destination="ZVP-6O-aDV" id="ofb-j4-Nr5"/>
+                        <outlet property="timeLabel" destination="LLt-D2-Agb" id="M7d-kf-Wbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,8 +66,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_pause" width="185" height="185"/>
+        <image name="button_play" width="187" height="189"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
