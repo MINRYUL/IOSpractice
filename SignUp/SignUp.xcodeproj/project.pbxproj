@@ -14,6 +14,7 @@
 		DAA55E702612F92300E8CD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA55E6F2612F92300E8CD86 /* Assets.xcassets */; };
 		DAA55E732612F92300E8CD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA55E712612F92300E8CD86 /* LaunchScreen.storyboard */; };
 		DAA55E7C2612FC0500E8CD86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA55E7B2612FC0500E8CD86 /* SecondViewController.swift */; };
+		DAA72ED126134BD90085A373 /* UserInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA72ED026134BD90085A373 /* UserInfomation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DAA55E722612F92300E8CD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA55E742612F92300E8CD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA55E7B2612FC0500E8CD86 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DAA72ED026134BD90085A373 /* UserInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DAA55E682612F92200E8CD86 /* SceneDelegate.swift */,
 				DAA55E6A2612F92200E8CD86 /* ViewController.swift */,
 				DAA55E6C2612F92200E8CD86 /* Main.storyboard */,
+				DAA72ED026134BD90085A373 /* UserInfomation.swift */,
 				DAA55E6F2612F92300E8CD86 /* Assets.xcassets */,
 				DAA55E712612F92300E8CD86 /* LaunchScreen.storyboard */,
 				DAA55E742612F92300E8CD86 /* Info.plist */,
@@ -144,6 +147,7 @@
 				DAA55E6B2612F92200E8CD86 /* ViewController.swift in Sources */,
 				DAA55E672612F92200E8CD86 /* AppDelegate.swift in Sources */,
 				DAA55E692612F92200E8CD86 /* SceneDelegate.swift in Sources */,
+				DAA72ED126134BD90085A373 /* UserInfomation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
