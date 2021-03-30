@@ -19,6 +19,11 @@ class SecondViewController: UIViewController {
     @IBAction func popToPrev() {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func dismissModal() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
