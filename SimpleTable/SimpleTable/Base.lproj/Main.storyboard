@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2tB-Da-Ioj">
-                                    <rect key="frame" x="0.0" y="117" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="160" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Add Data"/>
                                     <connections>
@@ -44,6 +44,40 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="6YT-V2-gKU" customClass="CustomTableViewCell" customModule="SimpleTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6YT-V2-gKU" id="CuY-fG-PZ7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGz-rK-6XT">
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTg-CS-6TW">
+                                                    <rect key="frame" x="357" y="0.0" width="42" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="UTg-CS-6TW" secondAttribute="trailing" constant="15" id="Hq1-a4-Pun"/>
+                                                <constraint firstAttribute="bottom" secondItem="UTg-CS-6TW" secondAttribute="bottom" id="MvJ-Jf-D9g"/>
+                                                <constraint firstItem="UTg-CS-6TW" firstAttribute="top" secondItem="CuY-fG-PZ7" secondAttribute="top" id="Ros-HK-0fa"/>
+                                                <constraint firstItem="nGz-rK-6XT" firstAttribute="leading" secondItem="CuY-fG-PZ7" secondAttribute="leadingMargin" id="X9P-of-ZIL"/>
+                                                <constraint firstItem="nGz-rK-6XT" firstAttribute="top" secondItem="CuY-fG-PZ7" secondAttribute="topMargin" id="cdw-Wg-dSG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nGz-rK-6XT" secondAttribute="bottom" id="hLO-qf-tVR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leftLabel" destination="nGz-rK-6XT" id="i6u-Wp-vJM"/>
+                                            <outlet property="rightLabel" destination="UTg-CS-6TW" id="mM0-xl-PSh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
