@@ -59,9 +59,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section < 2 {
+            //let cell: UITableViewCell = UITableViewCell() // 많은 row가 생기면 메모리의 낭비가 매우 심해진다. 따라서 재사용 셀을 쓰는 것이 효율적
             let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIndentifier, for: indexPath)
+            //dequeue 큐에 쌓여있던 재사용 가능한 셀을 꺼내와서 사용한다는 뜻. 밑으로 내리면 위에 위치한 셀은 사라지고 재사용 큐에 들어가게 된다. 밑으로 끌어 올리면 밑에 보여지는 셀은 재사용큐의 셀을 빼내어 보여지게 됨. 즉 사라진 셀은 큐에 들어가서 재사용되서 나오게 되는 것이다.
             let text: String = indexPath.section == 0 ? korean[indexPath.row] : english[indexPath.row]
             cell.textLabel?.text = text
+            
+            if indexPath.row == 1  {
+                cell.backgroundColor = UIColor.red //셀의 재사용을 알 수 있음
+            }else {
+                cell.backgroundColor = UIColor.white
+            }
             return cell
         }else{
             let cell: CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
