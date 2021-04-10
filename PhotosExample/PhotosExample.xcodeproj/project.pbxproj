@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA957CD32621C736006DB0E0 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA957CD22621C736006DB0E0 /* ImageZoomViewController.swift */; };
 		DA9CD30D262076AB00EC2919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9CD30C262076AB00EC2919 /* AppDelegate.swift */; };
 		DA9CD30F262076AB00EC2919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9CD30E262076AB00EC2919 /* SceneDelegate.swift */; };
 		DA9CD311262076AB00EC2919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9CD310262076AB00EC2919 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA957CD22621C736006DB0E0 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		DA9CD309262076AB00EC2919 /* PhotosExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9CD30C262076AB00EC2919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9CD30E262076AB00EC2919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		DA9CD30B262076AB00EC2919 /* PhotosExample */ = {
 			isa = PBXGroup;
 			children = (
+				DA957CD22621C736006DB0E0 /* ImageZoomViewController.swift */,
 				DA9CD30C262076AB00EC2919 /* AppDelegate.swift */,
 				DA9CD30E262076AB00EC2919 /* SceneDelegate.swift */,
 				DA9CD310262076AB00EC2919 /* ViewController.swift */,
@@ -140,6 +143,7 @@
 				DA9CD311262076AB00EC2919 /* ViewController.swift in Sources */,
 				DA9CD30D262076AB00EC2919 /* AppDelegate.swift in Sources */,
 				DA9CD30F262076AB00EC2919 /* SceneDelegate.swift in Sources */,
+				DA957CD32621C736006DB0E0 /* ImageZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
