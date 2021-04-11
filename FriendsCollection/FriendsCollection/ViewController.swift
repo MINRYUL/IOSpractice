@@ -39,6 +39,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let flowLayout: UICollectionViewFlowLayout
+        flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets.zero
+        flowLayout.minimumInteritemSpacing = 10
+        flowLayout.minimumLineSpacing = 10
+        
+        let halfWidth: CGFloat = UIScreen.main.bounds.width / 2.0
+        
+        flowLayout.estimatedItemSize = CGSize(width: halfWidth - 30, height: 90)
+        //에상사이즈를 준 이유는 오토레이아웃을 설정해 놓았기 때문에 이 오토레이아웃에 따라서 사이즈가 가변적일 수 있으니 예상 값을 알려주는 것이다. 여기 언저리로 계산해봐라라는 느낌.
+        
+        self.collectionView.collectionViewLayout = flowLayout
+        
         let jsonDecoder: JSONDecoder = JSONDecoder()
         guard let dataAsset: NSDataAsset = NSDataAsset(name: "friends") else {
             return
