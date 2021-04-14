@@ -14,6 +14,7 @@
 		DAB9B61C2627014F00327924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB9B61B2627014F00327924 /* Assets.xcassets */; };
 		DAB9B61F2627014F00327924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB9B61D2627014F00327924 /* LaunchScreen.storyboard */; };
 		DAB9B628262701FB00327924 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9B627262701FB00327924 /* Model.swift */; };
+		DAB9B62B262711CC00327924 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9B62A262711CC00327924 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DAB9B61E2627014F00327924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB9B6202627014F00327924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB9B627262701FB00327924 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DAB9B62A262711CC00327924 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		DAB9B6062627014E00327924 = {
 			isa = PBXGroup;
 			children = (
+				DAB9B62A262711CC00327924 /* Request.swift */,
 				DAB9B6112627014E00327924 /* Networking */,
 				DAB9B6102627014E00327924 /* Products */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				DAB9B6172627014E00327924 /* ViewController.swift in Sources */,
 				DAB9B6132627014E00327924 /* AppDelegate.swift in Sources */,
+				DAB9B62B262711CC00327924 /* Request.swift in Sources */,
 				DAB9B6152627014E00327924 /* SceneDelegate.swift in Sources */,
 				DAB9B628262701FB00327924 /* Model.swift in Sources */,
 			);

@@ -42,39 +42,26 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         return cell
     }
-
+    
+    @objc func didRecieveFriendsNotification(_ noti: Notification) {
+        guard let friends: [Friend] = noti.userInfo?["friends"] as? [Friend] else { return }
+        
+        self.friends = friends
+        
+        DispatchQueue.main.async { //백그라운드에서 호출된 것이기 때문에 이것도 백그라운드에서 동작하게 되므로 디스패치를 사용해 메인쓰레드에서 돌도록 해준다.
+            self.tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didRecieveFriendsNotification(_:)), name: DidReceiveFriendsNotification, object: nil) //옵저버 등록
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        guard let url: URL = URL(string: "https://randomuser.me/api/?results=20&inc=name,email,picture") else { return }
-        
-        let session: URLSession = URLSession(configuration: .default)
-        let dataTask: URLSessionDataTask = session.dataTask(with: url) { (data: Data?, responds: URLResponse?, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            guard let data = data else {return}
-            
-            do {
-                let apiResponse: APIResponse = try JSONDecoder().decode(APIResponse.self, from: data)
-                self.friends = apiResponse.results
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            } catch(let err) {
-                print(err.localizedDescription)
-            }
-        }  //이 클로저는 요청에 대한 서버의 응답이 왔을때 실행할 클로저 이 클로저 자체는 백그라운드에서 동작하는데 디스패치 큐로 리로드를 옮겨주면 메인에서 정상적으로 동작.
-        dataTask.resume() //이때 데이터 요청을 서버에 보낸다.
+        requestFriends()
     }
 }
 
