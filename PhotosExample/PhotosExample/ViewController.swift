@@ -9,7 +9,16 @@ import UIKit
 import Photos
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PHPhotoLibraryChangeObserver {
-   
+    
+    @IBOutlet weak var tableView: UITableView!
+    var fetchResult: PHFetchResult<PHAsset>!
+    let imageManager: PHCachingImageManager = PHCachingImageManager() //가져온 에셋으로 이미지를 로드
+    let cellIdentifier: String = "cell"
+    
+    @IBAction func touchUpRefreshButton(_ sender: UIBarButtonItem) {
+        self.tableView.reloadSections(IndexSet(0...0), with: .automatic)
+    }
+    
     func photoLibraryDidChange(_ changeInstance: PHChange) { //변화를 하면 반응을 하겠다.
         guard let changes = changeInstance.changeDetails(for: fetchResult)
         else { return }
@@ -19,16 +28,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         OperationQueue.main.addOperation {
             self.tableView.reloadData()
         }
-    }
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    var fetchResult: PHFetchResult<PHAsset>!
-    let imageManager: PHCachingImageManager = PHCachingImageManager() //가져온 에셋으로 이미지를 로드
-    let cellIdentifier: String = "cell"
-    
-    @IBAction func touchUpRefreshButton(_ sender: UIBarButtonItem) {
-        self.tableView.reloadSections(IndexSet(0...0), with: .automatic)
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -43,6 +42,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             // 실제로 사진첩의 사진이 삭제된다. 얼랏 창이 뜨면서 삭제가 됨.
         }
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.fetchResult?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+        
+        let asset: PHAsset = fetchResult.object(at: indexPath.row)
+        
+        imageManager.requestImage(for: asset,
+                                  targetSize: CGSize(width: 30, height: 30),
+                                  contentMode: .aspectFill,
+                                  options: nil,
+                                  resultHandler: { image, _ in
+                                    cell.imageView?.image = image
+                                  })
+        return cell
+    }
+    
     func requestCollection() {
         let cameraRoll: PHFetchResult<PHAssetCollection> = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumUserLibrary, options: nil) //카메라롤 컬랙션을 가져옴
         
@@ -96,31 +115,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
         
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.fetchResult?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
-        
-        let asset: PHAsset = fetchResult.object(at: indexPath.row)
-        
-        imageManager.requestImage(for: asset,
-                                  targetSize: CGSize(width: 30, height: 30),
-                                  contentMode: .aspectFill,
-                                  options: nil,
-                                  resultHandler: { image, _ in
-                                    cell.imageView?.image = image
-                                  })
-        return cell
-    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let nextViewController: ImageZoomViewController = segue.destination as? ImageZoomViewController else {
             return
         }
-        
         
         guard let cell: UITableViewCell = sender as? UITableViewCell else {
             return

@@ -30,7 +30,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? FriendCollectionViewCell else {
+            fatalError()
+        }
+        print(indexPath)
+        cell.nameAgeLabel?.text = "선택됐엉"
         collectionView.reloadData()
     }
     
