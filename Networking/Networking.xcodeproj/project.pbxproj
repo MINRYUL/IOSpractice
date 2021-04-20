@@ -27,7 +27,7 @@
 		DAB9B61E2627014F00327924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB9B6202627014F00327924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB9B627262701FB00327924 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DAB9B62A262711CC00327924 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DAB9B62A262711CC00327924 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = ../Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,6 @@
 		DAB9B6062627014E00327924 = {
 			isa = PBXGroup;
 			children = (
-				DAB9B62A262711CC00327924 /* Request.swift */,
 				DAB9B6112627014E00327924 /* Networking */,
 				DAB9B6102627014E00327924 /* Products */,
 			);
@@ -61,6 +60,7 @@
 		DAB9B6112627014E00327924 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DAB9B62A262711CC00327924 /* Request.swift */,
 				DAB9B6122627014E00327924 /* AppDelegate.swift */,
 				DAB9B6142627014E00327924 /* SceneDelegate.swift */,
 				DAB9B6162627014E00327924 /* ViewController.swift */,
