@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC1C76D7580985B0F376083C /* Pods_SnapKitLoginScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CC7390CFB7C5FC19A36D6A /* Pods_SnapKitLoginScreen.framework */; };
+		DADBD980263581B0004C522B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD97F263581B0004C522B /* AppDelegate.swift */; };
+		DADBD982263581B0004C522B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD981263581B0004C522B /* SceneDelegate.swift */; };
+		DADBD984263581B0004C522B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD983263581B0004C522B /* ViewController.swift */; };
+		DADBD989263581B1004C522B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBD988263581B1004C522B /* Assets.xcassets */; };
+		DADBD98C263581B1004C522B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBD98A263581B1004C522B /* LaunchScreen.storyboard */; };
+		DADBD99C26359961004C522B /* SloyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBD99B26359961004C522B /* SloyTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EE8813E450CFA027914981A /* Pods-SnapKitLoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitLoginScreen.release.xcconfig"; path = "Target Support Files/Pods-SnapKitLoginScreen/Pods-SnapKitLoginScreen.release.xcconfig"; sourceTree = "<group>"; };
+		61CC7390CFB7C5FC19A36D6A /* Pods_SnapKitLoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKitLoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBD97C263581B0004C522B /* SnapKitLoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitLoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADBD97F263581B0004C522B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DADBD981263581B0004C522B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DADBD983263581B0004C522B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DADBD988263581B1004C522B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DADBD98B263581B1004C522B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DADBD98D263581B1004C522B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADBD99B26359961004C522B /* SloyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SloyTextField.swift; sourceTree = "<group>"; };
+		E703D39A75BE4F9A3BD1D24B /* Pods-SnapKitLoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitLoginScreen.debug.xcconfig"; path = "Target Support Files/Pods-SnapKitLoginScreen/Pods-SnapKitLoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DADBD979263581B0004C522B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC1C76D7580985B0F376083C /* Pods_SnapKitLoginScreen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29C67F8B6458DB7DFDEFA397 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E703D39A75BE4F9A3BD1D24B /* Pods-SnapKitLoginScreen.debug.xcconfig */,
+				4EE8813E450CFA027914981A /* Pods-SnapKitLoginScreen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80BBBA2A4AE7B30D5DFB5060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61CC7390CFB7C5FC19A36D6A /* Pods_SnapKitLoginScreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADBD973263581B0004C522B = {
+			isa = PBXGroup;
+			children = (
+				DADBD97E263581B0004C522B /* SnapKitLoginScreen */,
+				DADBD97D263581B0004C522B /* Products */,
+				29C67F8B6458DB7DFDEFA397 /* Pods */,
+				80BBBA2A4AE7B30D5DFB5060 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DADBD97D263581B0004C522B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DADBD97C263581B0004C522B /* SnapKitLoginScreen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DADBD97E263581B0004C522B /* SnapKitLoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DADBD99B26359961004C522B /* SloyTextField.swift */,
+				DADBD999263582DF004C522B /* Controller */,
+				DADBD97F263581B0004C522B /* AppDelegate.swift */,
+				DADBD981263581B0004C522B /* SceneDelegate.swift */,
+				DADBD988263581B1004C522B /* Assets.xcassets */,
+				DADBD98A263581B1004C522B /* LaunchScreen.storyboard */,
+				DADBD98D263581B1004C522B /* Info.plist */,
+			);
+			path = SnapKitLoginScreen;
+			sourceTree = "<group>";
+		};
+		DADBD999263582DF004C522B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DADBD983263581B0004C522B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DADBD97B263581B0004C522B /* SnapKitLoginScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADBD990263581B1004C522B /* Build configuration list for PBXNativeTarget "SnapKitLoginScreen" */;
+			buildPhases = (
+				52EB399D4C234B7996AB5B30 /* [CP] Check Pods Manifest.lock */,
+				DADBD978263581B0004C522B /* Sources */,
+				DADBD979263581B0004C522B /* Frameworks */,
+				DADBD97A263581B0004C522B /* Resources */,
+				82FD0DB1E1706CB45ACB045E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKitLoginScreen;
+			productName = SnapKitLoginScreen;
+			productReference = DADBD97C263581B0004C522B /* SnapKitLoginScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADBD974263581B0004C522B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DADBD97B263581B0004C522B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DADBD977263581B0004C522B /* Build configuration list for PBXProject "SnapKitLoginScreen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DADBD973263581B0004C522B;
+			productRefGroup = DADBD97D263581B0004C522B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DADBD97B263581B0004C522B /* SnapKitLoginScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DADBD97A263581B0004C522B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBD98C263581B1004C522B /* LaunchScreen.storyboard in Resources */,
+				DADBD989263581B1004C522B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52EB399D4C234B7996AB5B30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapKitLoginScreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82FD0DB1E1706CB45ACB045E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitLoginScreen/Pods-SnapKitLoginScreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapKitLoginScreen/Pods-SnapKitLoginScreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapKitLoginScreen/Pods-SnapKitLoginScreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DADBD978263581B0004C522B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADBD984263581B0004C522B /* ViewController.swift in Sources */,
+				DADBD980263581B0004C522B /* AppDelegate.swift in Sources */,
+				DADBD99C26359961004C522B /* SloyTextField.swift in Sources */,
+				DADBD982263581B0004C522B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DADBD98A263581B1004C522B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DADBD98B263581B1004C522B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DADBD98E263581B1004C522B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DADBD98F263581B1004C522B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DADBD991263581B1004C522B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E703D39A75BE4F9A3BD1D24B /* Pods-SnapKitLoginScreen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SnapKitLoginScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ajou.minryul.SnapKitLoginScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DADBD992263581B1004C522B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE8813E450CFA027914981A /* Pods-SnapKitLoginScreen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SnapKitLoginScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ajou.minryul.SnapKitLoginScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DADBD977263581B0004C522B /* Build configuration list for PBXProject "SnapKitLoginScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBD98E263581B1004C522B /* Debug */,
+				DADBD98F263581B1004C522B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADBD990263581B1004C522B /* Build configuration list for PBXNativeTarget "SnapKitLoginScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DADBD991263581B1004C522B /* Debug */,
+				DADBD992263581B1004C522B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DADBD974263581B0004C522B /* Project object */;
+}

@@ -47,7 +47,9 @@ class ViewController: UIViewController {
     }
     
     private func createUI() {
+//        let rightButtonItem = UIBarButtonItem(image: system.folder, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
         self.navigationItem.title = "SnapKit"
+//        self.navigationItem.rightBarButtonItem
         view.addSubview(tableView)
         tableView.snp.makeConstraints { maker in
             maker.edges.equalTo(view)
