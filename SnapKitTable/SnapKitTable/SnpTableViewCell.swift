@@ -21,7 +21,7 @@ class SnpTableViewCell: UITableViewCell {
     }()
     
     let boardTitleLabel: UILabel = {
-        let label = UILabel()
+            let label = UILabel()
         label.font = .systemFont(ofSize: 17)
         
         return label
