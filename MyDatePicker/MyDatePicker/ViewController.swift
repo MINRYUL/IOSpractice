@@ -34,7 +34,5 @@ class ViewController: UIViewController {
         
         self.datePicker.addTarget(self, action: #selector(self.didDatePickerValueChanged(_:)), for: UIControl.Event.valueChanged)
     }
-
-
 }
 
