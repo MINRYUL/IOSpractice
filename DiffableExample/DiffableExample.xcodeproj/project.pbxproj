@@ -15,6 +15,8 @@
 		DA610E442785E3D20043F559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA610E422785E3D20043F559 /* LaunchScreen.storyboard */; };
 		DA610E4C2785F1250043F559 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA610E4B2785F1250043F559 /* CollectionViewCell.swift */; };
 		DABB39CE2786C4A800188647 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB39CD2786C4A800188647 /* CollectionReusableView.swift */; };
+		DABB39D02786CA6000188647 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB39CF2786CA6000188647 /* TabBarController.swift */; };
+		DABB39D22786CB3600188647 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB39D12786CB3600188647 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DA610E452785E3D20043F559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA610E4B2785F1250043F559 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DABB39CD2786C4A800188647 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		DABB39CF2786CA6000188647 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DABB39D12786CB3600188647 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DA610E372785E3D00043F559 /* AppDelegate.swift */,
 				DA610E392785E3D00043F559 /* SceneDelegate.swift */,
 				DA610E3B2785E3D00043F559 /* ViewController.swift */,
+				DABB39CF2786CA6000188647 /* TabBarController.swift */,
+				DABB39D12786CB3600188647 /* CollectionViewController.swift */,
 				DABB39CD2786C4A800188647 /* CollectionReusableView.swift */,
 				DA610E4B2785F1250043F559 /* CollectionViewCell.swift */,
 				DA610E3D2785E3D00043F559 /* Main.storyboard */,
@@ -147,6 +153,8 @@
 				DA610E3C2785E3D00043F559 /* ViewController.swift in Sources */,
 				DA610E382785E3D00043F559 /* AppDelegate.swift in Sources */,
 				DA610E4C2785F1250043F559 /* CollectionViewCell.swift in Sources */,
+				DABB39D02786CA6000188647 /* TabBarController.swift in Sources */,
+				DABB39D22786CB3600188647 /* CollectionViewController.swift in Sources */,
 				DABB39CE2786C4A800188647 /* CollectionReusableView.swift in Sources */,
 				DA610E3A2785E3D00043F559 /* SceneDelegate.swift in Sources */,
 			);

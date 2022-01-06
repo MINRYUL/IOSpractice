@@ -22,9 +22,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     private func configureView() {
         self.backgroundColor = .systemGreen
-        NSLayoutConstraint.activate([
-            self.heightAnchor.constraint(equalToConstant: 200)
-        ])
     }
     
 }

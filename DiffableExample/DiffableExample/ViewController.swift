@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     
     private func configureCollectionView() {
         self.collectionView.delegate = self
-        self.collectionView.collectionViewLayout = configureCompositionalLayout()
+        self.collectionView.collectionViewLayout = self.configureCompositionalLayout()
         self.collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
         self.collectionView.register(CollectionReusableView.self,
                                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
@@ -64,8 +64,8 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             self.collectionView.topAnchor.constraint(equalTo: self.view.topAnchor),
             self.collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            self.collectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-            self.collectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor)
+            self.collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
     }
     
