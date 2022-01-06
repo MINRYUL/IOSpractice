@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         self.configuareDataSource()
         self.configureBinding()
         self.configureView()
+        self.configureHeader()
     }
     
     private func bindSnapShotApply(section: DiffableSection, item: [AnyHashable]) {
@@ -53,6 +54,9 @@ class ViewController: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.collectionViewLayout = configureCompositionalLayout()
         self.collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
+        self.collectionView.register(CollectionReusableView.self,
+                                     forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                     withReuseIdentifier: CollectionReusableView.identifier)
     }
     
     private func configureView() {
@@ -74,7 +78,27 @@ class ViewController: UIViewController {
             section.orthogonalScrollingBehavior = .none
             section.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
             
+            let headerSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalWidth(1/3))
+            let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                layoutSize: headerSize,
+                elementKind: UICollectionView.elementKindSectionHeader,
+                alignment: .top)
+            
+            section.boundarySupplementaryItems = [sectionHeader]
             return section
+        }
+    }
+    
+    private func configureHeader() {
+        self.dataSource?.supplementaryViewProvider = { (
+            collectionView: UICollectionView,
+            _: String,
+            indexPath: IndexPath) -> UICollectionReusableView? in
+            guard let header: CollectionReusableView = self.collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionReusableView.identifier, for: indexPath) as? CollectionReusableView else { return CollectionReusableView() }
+
+            return header
         }
     }
     
