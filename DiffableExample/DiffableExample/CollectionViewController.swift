@@ -49,7 +49,7 @@ class CollectionViewController: UIViewController {
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.5)), subitems: [item])
             let section = NSCollectionLayoutSection(group: group)
             section.orthogonalScrollingBehavior = .none
-            section.contentInsets = .init(top: 3, leading: 0, bottom: 0, trailing: 0)
+            section.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
             
             let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1/3))
             let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
